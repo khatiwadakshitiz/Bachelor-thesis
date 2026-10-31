@@ -1,0 +1,4 @@
+Network Profile,Iterations,Success Rate (%),Mean Latency (ms),Std Dev (ms),95th Percentile (ms),Msg2 Size (bytes)
+Local Wi-Fi,100,100.0,9.99,1.35,11.95,1120
+Standard 4G,100,98.0,90.09,1.64,93.04,1120
+High-Latency / Lossy,100,90.0,239.92,1.52,242.34,1120

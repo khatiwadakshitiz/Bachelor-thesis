@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Empirical performance metrics of hybrid X25519 and ML-KEM-768 handshakes across varied network profiles.}
+\label{tab:hybrid_benchmarks}
+\begin{tabular}{lrrrrrr}
+\toprule
+Network Profile & Iterations & Success Rate (%) & Mean Latency (ms) & Std Dev (ms) & 95th Percentile (ms) & Msg2 Size (bytes) \\
+\midrule
+Local Wi-Fi & 100 & 100.000000 & 9.990000 & 1.350000 & 11.950000 & 1120 \\
+Standard 4G & 100 & 98.000000 & 90.090000 & 1.640000 & 93.040000 & 1120 \\
+High-Latency / Lossy & 100 & 90.000000 & 239.920000 & 1.520000 & 242.340000 & 1120 \\
+\bottomrule
+\end{tabular}
+\end{table}

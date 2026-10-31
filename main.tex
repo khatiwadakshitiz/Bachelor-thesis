@@ -1,0 +1,45 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Huge \textbf{Empirical Performance Analysis of Hybrid Post-Quantum Key Exchange (X25519 + ML-KEM-768)}}\par
+    \vspace{1.5cm}
+    {\Large \textbf{Undergraduate Thesis}}\par
+    \vspace{2cm}
+    {Your Name}\par
+    \vfill
+    Department of Computer Science\\
+    University Name\\
+    \today
+\end{titlepage}
+
+% --- CHAPTER: EVALUATION ---
+\chapter{Evaluation and Results}
+This chapter presents the empirical performance analysis of the hybrid cryptographic stack combining classical X25519 and post-quantum ML-KEM-768. 
+
+Due to the introduction of the 1,088-byte ML-KEM-768 ciphertext, network fragmentation and packet loss have a measurable impact on overall handshake latency and success rates under constrained network profiles.
+
+% Embedding your generated figure
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{hybrid_performance_evaluation.pdf}
+    \caption{Empirical evaluation showing mean latency and success rate across varied network profiles.}
+    \label{fig:hybrid_perf}
+\end{figure}
+
+Table \ref{tab:hybrid_benchmarks} summarizes the benchmark metrics across 100 iterations per network profile.
+
+% Embedding your generated LaTeX table
+\input{thesis_table.tex}
+\end{document}

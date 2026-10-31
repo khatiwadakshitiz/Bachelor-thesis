@@ -1,0 +1,28 @@
+# LaTeX temporary files & build outputs
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+
+# Python virtual environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+bin/
+etc/
+include/
+lib/
+share/
+pyvenv.cfg
+
+# System files
+.DS_Store
+Thumbs.db
